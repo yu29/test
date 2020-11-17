@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <style>
+      h2{
+        color:red;
+      }
+    </style>
+  </head>
+  <body>
+    寫一個ascii對照表<br/>
+    hint:<br/>
+    <h3>字元找號碼</h3>
+    ("a").charCodeAt(0)<br/>
+    97<br/>
+    ("xyz").charCodeAt(0)<br/>
+    120<br/>
+    ("xyz").charCodeAt(1)<br/>
+    121<br/>
+    ("xyz").charCodeAt(2)<br/>
+    122<br/>
+    <h3>號碼找字元</h3>
+    string.fromcharCode(97) <br/>
+    
+    <h2>0-127 的ascii</h2>
+    <script>
+      
+      for(i=0;i<=127;i++){
+        c=String.fromcharCode(i)
+        document.write(c)
+      }
+    </script>
+  </body>
+</html>
